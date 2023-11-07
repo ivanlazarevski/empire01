@@ -1,0 +1,30 @@
+<div class="weapon-container">
+  <h4 class="weapon-name">{{ weapon.name }}</h4>
+  <div class="weapon">
+    <div class="weapon-stats">
+      <div class="weapon-stat-name" hoverAbbreviation [fullText]="'Range'">
+        R
+      </div>
+      <div class="weapon-stat-value">{{ weapon.range }}</div>
+    </div>
+    <div class="weapon-stats">
+      <div class="weapon-stat-name" hoverAbbreviation [fullText]="'Shots'">
+        S
+      </div>
+      <div class="weapon-stat-value">{{ weapon.shots }}</div>
+    </div>
+    <div class="weapon-stats">
+      <div class="weapon-stat-name" hoverAbbreviation [fullText]="'Combat'">
+        C
+      </div>
+      <div class="weapon-stat-value">{{ weapon.combatStrength }}</div>
+    </div>
+    <div class="weapon-stats">
+      <div class="weapon-stat-name" hoverAbbreviation
+      [fullText]="'Armor Piercing'">AP</div>
+      <div class="weapon-stat-value">
+        {{ weapon.armorPiercing ? "Y" : "N" }}
+      </div>
+    </div>
+  </div>
+</div>

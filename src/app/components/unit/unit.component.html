@@ -1,0 +1,86 @@
+<div class="unit">
+  <h2 class="unit-name">{{ unit.name }}</h2>
+  <div class="unit-box">
+    <div class="unit-left">
+      <div class="unit-stats">
+        <div class="unit-stat">
+          <div hoverAbbreviation [fullText]="'Movement'" class="unit-stat-name">
+            M
+          </div>
+          <div class="unit-stat-value">
+            {{ unit.stats.movement }}
+          </div>
+        </div>
+        <div class="unit-stat">
+          <div
+            hoverAbbreviation
+            [fullText]="'Unit Cost'"
+            class="unit-stat-name"
+          >
+            $
+          </div>
+          <div class="unit-stat-value">
+            {{ unit.stats.cost }}
+          </div>
+        </div>
+        <div class="unit-stat">
+          <div
+            class="unit-stat-name"
+            hoverAbbreviation
+            [fullText]="'Unit Points'"
+          >
+            Pt
+          </div>
+          <div class="unit-stat-value">
+            {{ unit.stats.weight }}
+          </div>
+        </div>
+        <div class="unit-stat">
+          <div
+            class="unit-stat-name"
+            hoverAbbreviation
+            [fullText]="'Unit Toughness'"
+          >
+            HP
+          </div>
+          <div class="unit-stat-value">
+            {{ unit.stats.toughness }}
+          </div>
+        </div>
+        <div class="unit-stat">
+          <div
+            class="unit-stat-name"
+            hoverAbbreviation
+            [fullText]="'Unit Count'"
+          >
+            #
+          </div>
+          <div class="unit-stat-value">
+            {{ unit.stats.count }}
+          </div>
+        </div>
+      </div>
+      <div class="unit-weapons">
+        <h3>Weapons</h3>
+        <empire-weapon
+          [weapon]="weapon"
+          *ngFor="let weapon of unit.weapons; index as index"
+          [ngClass]="index % 2 === 0 ? 'odd' : 'even'"
+        ></empire-weapon>
+      </div>
+    </div>
+    <div class="unit-right">
+      <div
+        class="unit-image"
+        [ngStyle]="{ 'background-image': 'url(' + unit.image + ')' }"
+      ></div>
+      <h3 class="special-abilities-title">Special Abilities</h3>
+      <div class="special-abilities">
+        <empire-ability
+          [ability]="ability"
+          *ngFor="let ability of unit.abilities"
+        />
+      </div>
+    </div>
+  </div>
+</div>

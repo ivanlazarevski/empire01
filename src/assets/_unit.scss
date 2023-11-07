@@ -1,0 +1,53 @@
+.unit {
+  font-size: 1.8rem;
+  color: $color-white;
+  border: 1px solid $color-main;
+  height: 100%;
+
+  &-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+
+  &-image {
+    width: 100%;
+    height: 250px;
+    border: 1px solid $color-main;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+
+  &-weapons {
+    margin: 4rem 0;
+    width: 95%;
+  }
+
+  &-stats {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &-stat-name,
+  &-stat-value {
+    background-color: #2d3436;
+    width: 4rem;
+    text-align: center;
+    margin: 0.5rem;
+    font-weight: 700;
+  }
+
+  &-stat-name {
+    position: relative;
+  }
+}
+
+h2,
+h3 {
+  background-color: $color-main;
+  color: $color-white;
+  width: 100%;
+  padding: 0.5rem;
+}

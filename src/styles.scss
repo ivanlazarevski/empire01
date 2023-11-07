@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$color-main: #3f6f82;
+$color-white: #f5f5f5;
+$color-black: #1e1e1e;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: $color-black;
+}
+
+.container {
+  padding: 2rem 4rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.keyword {
+  font-weight: 700;
+}
+
+.tooltip-text {
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  font-size: 1.5rem;
+  background-color: $color-white;
+  color: $color-black;
+}
+
+@import "./assets/header";
+@import "./assets/unit";
+@import "./assets/weapon";
+@import "./assets/rules";
+@import "./assets/ability";
