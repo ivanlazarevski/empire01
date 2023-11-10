@@ -3,12 +3,13 @@
   background-color: $color-main;
   color: $color-white;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 2rem;
 
   &-brand {
     font-size: 3rem;
     font-weight: 700;
+    cursor: pointer;
   }
 
   &-nav {

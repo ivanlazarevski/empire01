@@ -12,8 +12,8 @@ export class UnitLibraryComponent {
       name: 'Rifle Guard',
       image: '/assets/images/female-cadian-astra-militarum.webp',
       stats: {
-        movement: 6,
-        cost: 10,
+        movement: 12,
+        cost: 1,
         weight: 6,
         toughness: 2,
         count: 4,
@@ -21,7 +21,7 @@ export class UnitLibraryComponent {
       weapons: [
         {
           name: 'Bolt Rifle',
-          range: 10,
+          range: 24,
           shots: 1,
           combatStrength: 7,
           armorPiercing: false,
@@ -49,8 +49,8 @@ export class UnitLibraryComponent {
       name: 'Medtech',
       image: '/assets/images/medtech.png',
       stats: {
-        movement: 6,
-        cost: 10,
+        movement: 10,
+        cost: 2,
         weight: 4,
         toughness: 2,
         count: 2,
@@ -58,7 +58,7 @@ export class UnitLibraryComponent {
       weapons: [
         {
           name: 'Bolt Pistol',
-          range: 8,
+          range: 18,
           shots: 3,
           combatStrength: 9,
           armorPiercing: false,
@@ -90,8 +90,8 @@ export class UnitLibraryComponent {
       name: 'Battle Captain',
       image: '/assets/images/marine-captain.jpg',
       stats: {
-        movement: 6,
-        cost: 15,
+        movement: 12,
+        cost: 3,
         weight: 8,
         toughness: 3,
         count: 1,
@@ -99,14 +99,14 @@ export class UnitLibraryComponent {
       weapons: [
         {
           name: 'Plasma Assault Rifle',
-          range: 10,
+          range: 28,
           shots: 3,
           combatStrength: 8,
           armorPiercing: false,
         },
         {
           name: 'Chainsword',
-          range: 0,
+          range: 'M',
           shots: 2,
           combatStrength: 6,
           armorPiercing: false,
@@ -129,7 +129,7 @@ export class UnitLibraryComponent {
       ],
     },
     {
-      name: 'Royal Guard',
+      name: 'Dummy',
       image:
         'https://www.belloflostsouls.net/wp-content/uploads/2019/02/female-cadian-astra-militarum.jpg',
       stats: {
@@ -160,7 +160,7 @@ export class UnitLibraryComponent {
       ],
     },
     {
-      name: 'Royal Guard',
+      name: 'Dummy',
       image:
         'https://www.belloflostsouls.net/wp-content/uploads/2019/02/female-cadian-astra-militarum.jpg',
       stats: {
@@ -191,7 +191,7 @@ export class UnitLibraryComponent {
       ],
     },
     {
-      name: 'Royal Guard',
+      name: 'Dummy',
       image:
         'https://www.belloflostsouls.net/wp-content/uploads/2019/02/female-cadian-astra-militarum.jpg',
       stats: {

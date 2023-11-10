@@ -11,6 +11,7 @@ import { TooltipComponent } from './components/tooltip/tooltip.component';
 import { RoutingModule } from './helpers/routing-module/routing.module';
 import { RulesComponent } from './components/rules/rules.component';
 import { UnitLibraryComponent } from './components/unit-library/unit-library.component';
+import { WelcomePageComponent } from './components/welcome-page/welcome-page.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { UnitLibraryComponent } from './components/unit-library/unit-library.com
     TooltipComponent,
     RulesComponent,
     UnitLibraryComponent,
+    WelcomePageComponent,
   ],
   imports: [BrowserModule, RoutingModule],
   providers: [],
